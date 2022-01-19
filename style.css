@@ -11,12 +11,13 @@
 }
 
 /* DARK MODE */
-body.dark {
+body {
   background: var(--dark);
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh; /* colocar o containeira no centro */
+  transition: 0.3s linear;
 }
 
 /* LIGHT MODE */
@@ -54,7 +55,22 @@ div.switchButton {
   top: 0.15rem;
   left: 0.15rem;
 
+  transition: 0.3s linear;
+
   /* for the dark mode:
   left: 3.15rem;
   */
+}
+
+div.switchButton.light {
+  background: white;
+  border-radius: 50%;
+
+  width: 2.5rem;
+  height: 2.5rem;
+
+  position: absolute;
+
+  top: 0.15rem;
+  left: 3.15rem;
 }

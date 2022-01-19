@@ -7,27 +7,18 @@
     <title>Theme Switcher</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
-  <body class="light">
+  <body id="switchContainer" class="light">
     <div class="container">
-      <div class="darkMode">
-        <img
-          id="moonIcon"
-          onclick="darkMode()"
-          src="assets/moon.svg"
-          alt="moon icon"
-        />
+      <div class="darkMode" onclick="darkTheme()">
+        <img id="moonIcon" src="assets/moon.svg" alt="moon icon" />
       </div>
 
-      <div class="switchButton dark"></div>
+      <div class="switchButton" onclick="darkTheme()"></div>
 
-      <div class="lightMode">
-        <img
-          id="sunIcon"
-          onclick="lightMode()"
-          src="assets/sun.svg"
-          alt="sun icon"
-        />
+      <div class="lightMode" onclick="darkTheme()">
+        <img id="sunIcon" src="assets/sun.svg" alt="sun icon" />
       </div>
     </div>
+    <script src="./main.js"></script>
   </body>
 </html>
