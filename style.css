@@ -16,17 +16,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* colocar o containeira no centro */
+  height: 100vh; /* colocar o container no centro */
   transition: 0.3s linear;
 }
 
 /* LIGHT MODE */
 body.light {
   background: var(--light);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh; /* colocar o containeira no centro */
 }
 
 /* ICONES DE THEME SWITCH */
@@ -43,10 +39,10 @@ body.light {
 }
 
 /* Switch ball */
+
 div.switchButton {
   background: white;
   border-radius: 50%;
-
   width: 2.5rem;
   height: 2.5rem;
 
@@ -56,13 +52,9 @@ div.switchButton {
   left: 0.15rem;
 
   transition: 0.3s linear;
-
-  /* for the dark mode:
-  left: 3.15rem;
-  */
 }
 
-div.switchButton.light {
+body.light div.switchButton {
   background: white;
   border-radius: 50%;
 
